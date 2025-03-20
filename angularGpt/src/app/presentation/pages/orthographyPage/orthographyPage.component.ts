@@ -1,9 +1,18 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChatMessageComponent, MyMessageComponent } from '@components/index';
+
+
 
 @Component({
   selector: 'app-orthography-page',
-  imports: [],
+  imports: [
+    ChatMessageComponent,
+    MyMessageComponent,
+  ],
   templateUrl: './orthographyPage.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class OrthographyPageComponent { }
+export default class OrthographyPageComponent {
+
+
+}
