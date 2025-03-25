@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ChatMessageComponent, MyMessageComponent } from '@components/index';
+import { ChatMessageComponent, MyMessageComponent, TextMessageBoxComponent, TypingLoaderComponent } from '@components/index';
 
 
 
@@ -8,6 +8,8 @@ import { ChatMessageComponent, MyMessageComponent } from '@components/index';
   imports: [
     ChatMessageComponent,
     MyMessageComponent,
+    TypingLoaderComponent,
+    TextMessageBoxComponent,
   ],
   templateUrl: './orthographyPage.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
